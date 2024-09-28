@@ -28,7 +28,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Product>> GetAll()
         {
-            if (DateTime.Now.Hour==02)
+            if (DateTime.Now.Hour==20)
             {
                 return new ErrorDataResult<List<Product>>(Messages.MaintanceTime);
             }
